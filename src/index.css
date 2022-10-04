@@ -1,0 +1,39 @@
+* {box-sizing: border-box;}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+label {font-size: 20px;}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+thead tr {text-align: center;vertical-align: middle;font-size: 20px;}
+
+.flex_center_center {
+    display: flex;justify-content: center;align-items: center;
+}
+.flex_start_center {
+    display: flex;justify-content: flex-start;align-items: center;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid skyblue;
+    border-bottom: 10px solid darkslateblue;
+    margin: 40px auto;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
